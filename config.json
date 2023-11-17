@@ -1,0 +1,1 @@
+{"db_type": 3, "db_driver": "pymysql", "db_username": "root", "db_password": "example", "db_url": "db", "db_port": "3306", "db_name": "flicket", "SECRET_KEY": "7PyiaO0IW+1IzT5t7WzQpkW4CkzUFIt+", "NOTIFICATION_USER_PASSWORD": "LtVNCFmIm90FJphnV6X8NJ4EqxLO9e9f"}
