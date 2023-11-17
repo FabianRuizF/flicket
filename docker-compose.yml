@@ -1,0 +1,20 @@
+version: '3'
+services:
+ db:
+  image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: example
+  volumes:
+    - ./volumes/:/var/lib/mysql
+    - ./mysql_entrypoint:/docker-entrypoint-initdb.d
+  restart: always
+
+ web:
+  image: flicket
+  volumes:
+    - .:/app
+  ports:
+    - "5000:5000"
+  depends_on:
+    - db
+
