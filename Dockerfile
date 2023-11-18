@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install MySQL driver
 RUN pip install pymysql
 
-
+RUN flask db upgrade
 
 RUN apt-get update && apt-get install -y iputils-ping
 CMD ["bash", "-c", "tail -f /dev/null"]
